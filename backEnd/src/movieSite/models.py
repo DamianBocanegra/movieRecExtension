@@ -7,4 +7,4 @@ class Movie(models.Model):
     releaseYear = models.CharField(max_length = 4)
     length = models.IntegerField()
     MPAA_rating = models.CharField(max_length = 6)
-    qualityRating = models.IntegerField();
+    qualityRating = models.IntegerField()
