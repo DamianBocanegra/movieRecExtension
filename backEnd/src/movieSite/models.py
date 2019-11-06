@@ -8,3 +8,6 @@ class Movie(models.Model):
     length = models.IntegerField()
     MPAA_rating = models.CharField(max_length = 6)
     qualityRating = models.IntegerField()
+
+    def __str__(self):
+        return self.title
