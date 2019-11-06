@@ -33,7 +33,7 @@ const Films = (props) =>
                 },
                 pageSize: 3,
                 }}
-                dataSource={listData}
+                dataSource={props.data}
                 footer={
                 <div>
                     <b>ant design</b> footer part
@@ -58,9 +58,9 @@ const Films = (props) =>
                     <List.Item.Meta
                     avatar={<Avatar src={item.avatar} />}
                     title={<a href={item.href}>{item.title}</a>}
-                    description={item.description}
+                    description={item.genre + " | " + item.releaseYear + " | " + item.length + " minutes | " + item.MPAA_rating + " | User Rating: " + item.qualityRating + "/5"}
                     />
-                    {item.content}
+                    {"I am a movie."}
                 </List.Item>
                 )}
             />
