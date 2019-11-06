@@ -1,18 +1,6 @@
 import React from 'react'
 import { List, Avatar, Icon } from 'antd';
 
-const listData = [];
-for (let i = 0; i < 23; i++) {
-  listData.push({
-    href: 'http://ant.design',
-    title: `ant design part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  });
-}
 
 const IconText = ({ type, text }) => (
   <span>
@@ -55,7 +43,7 @@ const Films = (props) =>
                     title={<a href={`/${item.filmID}`}>{item.title}</a>}
                     description={item.genre + " | " + item.releaseYear + " | " + item.length + " minutes | " + item.MPAA_rating + " | User Rating: " + item.qualityRating + "/5"}
                     />
-                    {"I am a movie."}
+                    {item.description}
                 </List.Item>
                 )}
             />

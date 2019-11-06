@@ -27,7 +27,7 @@ class FilmDetail extends React.Component{
                     " minutes | " + this.state.film.MPAA_rating + 
                     " | User Rating: " + 
                     this.state.film.qualityRating + "/5"}</p>
-                    <p>{"I am a great movie. I think..."}</p> 
+                    <p>{this.state.film.description}</p> 
             </Card>
         );
     }
